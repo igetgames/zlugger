@@ -7,6 +7,6 @@ if [[ $PMSPEC != *f* ]] {
   fpath+=( "${0:h}/functions" )
 }
 
-autoload -Uz \
+autoload -Uz -- \
   +zlug-write-script-header \
-  @zlug-from-deferred-source
+  @zlug-from-zsh-defer-source
